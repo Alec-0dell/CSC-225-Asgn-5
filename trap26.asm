@@ -30,8 +30,8 @@ TRAP26: ; TODO: Implement this service routine.
     STI R1, KBIV
     LD R1, KBIMASK
     STI R1, KBSR
-    ST R1, P2PC
-    ST R2, P2PSR
+    LD R1, P2PC
+    LD R2, P2PSR
     ADD R6, R6, #-1
     STR R2, R6, #0
     ADD R6, R6, #-1
